@@ -9,7 +9,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { PadreComponent } from './padre/padre.component';
 import { Child1Component } from './child1/child1.component';
-import { Child2Component } from './child2/child2.component';
 import { BarranavComponent } from './barranav/barranav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,7 +20,6 @@ import { MatListModule } from '@angular/material/list';
     AppComponent,
     PadreComponent,
     Child1Component,
-    Child2Component,
     BarranavComponent
   ],
   imports: [

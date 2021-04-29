@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class PadreComponent implements OnInit {
   mensaje: string;
 
+  keyUp(mensaje: string) {
+    this.mensaje = mensaje;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

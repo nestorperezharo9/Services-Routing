@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ServiceService } from '../service.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child1',
@@ -8,17 +7,10 @@ import { ServiceService } from '../service.service';
 })
 export class Child1Component implements OnInit {
 
-  mensaje: string;
-  constructor(public servicioComunica: ServiceService) { }
+  @Input() mensajechild: string;
+  constructor() { }
 
   ngOnInit(): void {
-    this.servicioComunica.enviarMensajeO.subscribe(response => {
-      this.mensaje = response;
-    })
-  }
-
-  cambioTexto(mensaje: string) {
-    this.servicioComunica.comunicarMensaje(mensaje);
   }
 
 }
