@@ -2,10 +2,16 @@
     <div class="row">
       <div class="col-sm-8 offset-sm-2">
         <h2>HELLO COMPONENT PADRE!</h2>
-          <input 
-            class="mx-2 form-control"
+        <hr>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Escriba aquí</mat-label>
+            <input type="text" class="mx-2 form-control color"
             #padreInput
-            (keyup)="keyUp(padreInput.value)">
+            (keyup)="keyUp(padreInput.value)" matInput>
+            <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+        </form>
             <br><br>
           <div class="col-sm-12">
             <app-child1 [mensajechild]="mensaje"></app-child1>

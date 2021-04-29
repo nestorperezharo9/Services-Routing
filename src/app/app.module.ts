@@ -11,16 +11,20 @@ import { PadreComponent } from './padre/padre.component';
 import { Child1Component } from './child1/child1.component';
 import { BarranavComponent } from './barranav/barranav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
+import { AcercaComponent } from './acerca/acerca.component';
+import { AngularmaterialComponent } from './angularmaterial/angularmaterial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PadreComponent,
     Child1Component,
-    BarranavComponent
+    BarranavComponent,
+    AcercaComponent,
+    AngularmaterialComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,7 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatIconModule,
     LayoutModule,
-    MatButtonModule,
+    MatInputModule,
     MatSidenavModule,
     MatListModule
   ],
