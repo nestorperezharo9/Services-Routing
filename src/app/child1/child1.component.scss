@@ -1,7 +1,29 @@
 .child {
-    margin: 50px auto;
-    padding: 5px;
-    background-color: lightblue;
-    height: 150px;
-    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: #12171B;
+    padding: 100px;
+}
+
+h3 {
+    font: oblique bold 120% cursive;
+    color: #FCFF6B;
+}
+
+.top {
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff69c;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.date {
+    background-position: 15px 50%; /* x-pos y-pos */
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #FBC383;
+    border-bottom: 2px solid #FBC383;
+    color:#000000;
 }

@@ -4,6 +4,7 @@ import { PadreComponent } from './padre/padre.component';
 import { Child1Component } from './child1/child1.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { AngularmaterialComponent } from './angularmaterial/angularmaterial.component';
+import { EscribeComponent } from './input/escribe/escribe.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'child1',
     component: Child1Component
+  },
+  {
+    path: 'mostrar',
+    component: EscribeComponent
   },
   {
     path: 'acerca',

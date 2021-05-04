@@ -10,11 +10,11 @@ export class PadreComponent implements OnInit {
 
   constructor(public comunicacion: ServiceService) {  }
 
+  ngOnInit(): void {
+  }
+  
   public emitirValor() {
     var date = new Date();
-    this.comunicacion.enviar(date.getDate(), date.getMonth()+1, date.getFullYear());
-  }
-
-  ngOnInit(): void {
+    this.comunicacion.enviar(date.getDate(), date.getMonth()+1, date.getFullYear(), date.getHours(), date.getMinutes());
   }
 }

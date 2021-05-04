@@ -2,6 +2,13 @@
 <hr>
 
 <div class="container">
-  <button (click)="emitirValor()">Enviar valor con fecha y horario actual</button>  
+  <span class="color">
+    <mat-icon style="color:#FCFF6B;">arrow_downward</mat-icon> 
+    Pulse aquí 
+    <mat-icon style="color:#FCFF6B;">arrow_downward</mat-icon>
+  </span>
+  <button mat-stroked-button class="boton" (click)="emitirValor()">
+    FECHA<mat-icon>today</mat-icon> Y HORA ACTUAL<mat-icon>watch</mat-icon>
+  </button>  
 </div>
 

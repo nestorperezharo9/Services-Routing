@@ -10,6 +10,8 @@ export class ServiceService {
   private day = new ReplaySubject<number>(1);
   private month = new ReplaySubject<number>(1);
   private year = new ReplaySubject<number>(1);
+  private hour = new ReplaySubject<number>(1);
+  private minuts = new ReplaySubject<number>(1);
   
   public get recibirday() {
     return this.day.asObservable()
@@ -20,20 +22,18 @@ export class ServiceService {
   public get recibiraño() {
     return this.year.asObservable()
   }
-
-  public enviar(id: number, id1:number, id2:number): void {
-    this.day.next(id);
-    this.month.next(id1);
-    this.year.next(id2);
-
+  public get recibirhoras() {
+    return this.hour.asObservable()
   }
-  /*
-  mensaje: string;
-  private enviarMensajeS = new Subject<string>();
-  enviarMensajeO = this.enviarMensajeS.asObservable();
+  public get recibirminutos() {
+    return this.minuts.asObservable()
+  }
 
-  comunicarMensaje(mensaje: string) {
-    this.mensaje = mensaje;
-    this.enviarMensajeS.next(mensaje);
-  }*/
+  public enviar(day: number, month:number, year:number, hour: number, min: number): void {
+    this.day.next(day);
+    this.month.next(month);
+    this.year.next(year);
+    this.hour.next(hour);
+    this.minuts.next(min);
+  }
 }

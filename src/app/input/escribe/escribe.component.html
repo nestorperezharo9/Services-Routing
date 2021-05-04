@@ -1,0 +1,13 @@
+<h2>HELLO COMPONENT ESCRIBE!</h2>
+<hr>
+
+<div class="container">
+    <mat-form-field class="example-full-width" style="background-color: #FCFF6B;">
+        <mat-label >Write here</mat-label>
+        <input matInput placeholder="..." #padreInput (keyup)="keyUp(padreInput.value)">
+    </mat-form-field>
+    <br><br><br><br>
+    <div class="col-sm-12">
+        <app-muestra [mensajechild]="mensajepadre"></app-muestra>
+    </div>
+</div>

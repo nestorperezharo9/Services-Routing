@@ -2,6 +2,9 @@
 <hr>
 
 <div class="child">
-    <h3>La Fecha Actual es:</h3>
-    <p>{{ day | async }}  /  {{ month | async }}  /  {{ year | async }}</p> <br>
+    <h3>La Fecha y Hora Actual es:</h3>
+    <div class="top">
+        <p class="date">{{ day | async }}  /  {{ month | async }}  /  {{ year | async }}  <mat-icon>today</mat-icon>   
+            {{ hour | async }}  :   {{ min | async }} <mat-icon>watch</mat-icon></p> <br>
+    </div>
 </div>

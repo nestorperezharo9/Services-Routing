@@ -13,9 +13,12 @@ import { BarranavComponent } from './barranav/barranav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { AcercaComponent } from './acerca/acerca.component';
 import { AngularmaterialComponent } from './angularmaterial/angularmaterial.component';
+import { MatButtonModule } from '@angular/material/button';
+import { EscribeComponent } from './input/escribe/escribe.component';
+import { MuestraComponent } from './input/muestra/muestra.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { AngularmaterialComponent } from './angularmaterial/angularmaterial.comp
     Child1Component,
     BarranavComponent,
     AcercaComponent,
-    AngularmaterialComponent
+    AngularmaterialComponent,
+    EscribeComponent,
+    MuestraComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,7 @@ import { AngularmaterialComponent } from './angularmaterial/angularmaterial.comp
     LayoutModule,
     MatInputModule,
     MatSidenavModule,
+    MatButtonModule,
     MatListModule
   ],
   providers: [],
