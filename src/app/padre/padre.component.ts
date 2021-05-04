@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-padre',
@@ -6,15 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./padre.component.scss']
 })
 export class PadreComponent implements OnInit {
-  mensaje: string;
 
-  keyUp(mensaje: string) {
-    this.mensaje = mensaje;
+  constructor(public comunicacion: ServiceService) {  }
+
+  public emitirValor() {
+    var date = new Date();
+    this.comunicacion.enviar(date.getDate(), date.getMonth()+1, date.getFullYear());
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }
-
 }

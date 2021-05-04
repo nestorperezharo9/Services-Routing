@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-child1',
@@ -7,8 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Child1Component implements OnInit {
 
-  @Input() mensajechild: string;
-  constructor() { }
+  public day = this.comunicacion.recibirday;
+  public month = this.comunicacion.recibirmes;
+  public year = this.comunicacion.recibiraño;
+
+  constructor(public comunicacion: ServiceService) {  }
 
   ngOnInit(): void {
   }
